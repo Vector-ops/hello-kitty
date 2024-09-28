@@ -96,12 +96,3 @@ resource "aws_kms_alias" "a" {
 }
 
 data "aws_caller_identity" "current" {}
-
-
-
-
-
-
-
-
-

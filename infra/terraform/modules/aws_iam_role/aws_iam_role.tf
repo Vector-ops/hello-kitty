@@ -13,5 +13,3 @@ resource "aws_iam_role" "this" {
   force_detach_policies = var.force_detach_policies
   tags                  = var.tags
 }
-
-

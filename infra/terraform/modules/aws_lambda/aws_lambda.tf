@@ -95,7 +95,7 @@ resource "aws_lambda_event_source_mapping" "this" {
     database_name   = var.event_source_mapping[count.index].database_name
     full_document   = var.event_source_mapping[count.index].full_document
   }
-  # for SQS 
+  # for SQS
   scaling_config {
     maximum_concurrency = var.event_source_mapping[count.index].maximum_concurrency
   }
@@ -111,11 +111,3 @@ resource "aws_lambda_permission" "this" {
   principal     = var.event_source_mapping[count.index].principal
   source_arn    = var.event_source_arn
 }
-
-
-
-
-
-
-
-

@@ -4,7 +4,3 @@ resource "aws_cloudwatch_log_group" "this" {
 
   tags = var.tags
 }
-
-
-
-
